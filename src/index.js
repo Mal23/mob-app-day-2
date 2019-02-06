@@ -20,9 +20,16 @@ mobForm.addEventListener('submit', function(event){
         chosenWeapons: chosenWeapons
     };
 
-    window.location = 'thanks.html';
+    let applicants = [];
+    const jsonString = window.localStorage.getItem('applicants');
+    if(jsonString) {
+        applicants = JSON.parse(jsonString);
+    }
 
-    const serialize = JSON.stringify(applicant);
-    window.localStorage.setItem('applicant', serialize);
+    applicants.push(applicant);
+    //window.location = 'thanks.html';
+
+    const serialize = JSON.stringify(applicants);
+    window.localStorage.setItem('applicants', serialize);
     
 });
