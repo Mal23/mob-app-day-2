@@ -27,7 +27,7 @@ mobForm.addEventListener('submit', function(event){
     }
 
     applicants.push(applicant);
-    //window.location = 'thanks.html';
+    window.location = 'thanks.html';
 
     const serialize = JSON.stringify(applicants);
     window.localStorage.setItem('applicants', serialize);

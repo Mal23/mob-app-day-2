@@ -1,0 +1,52 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+    color: #A3007A;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}
+
+button {
+    font-size: 20px; 
+    background-color: rgb(247, 247, 201);
+    border-radius: 10px;
+}
+
+footer {
+    margin: 20px;
+}
+
+fieldset {
+    margin: 30px;
+}
+
+table, tr, td {
+    border: solid;
+    table-layout: auto;
+    padding: 5px;
+}
+
+#app-detail {
+    border: solid 1px;
+}
+
+dt {
+    text-align: left;
+    text-decoration: underline;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+dd {
+    display: inline-block;
+    text-align: left;
+    margin-left: 0px;
+}
+
+#weapons {
+    text-align: center;
+}
+

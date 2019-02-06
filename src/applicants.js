@@ -24,7 +24,8 @@ for(let index = 0; index < applicants.length; index++) {
     tr.appendChild(tdPosition);
 
     const tdWeapons = document.createElement('td');
-    tdWeapons.textContent = mobApplicant.chosenWeapons;
+    tdWeapons.textContent = mobApplicant.chosenWeapons.join(' ');
     tr.appendChild(tdWeapons);
+    console.log(mobApplicant.chosenWeapons);
     
 }
