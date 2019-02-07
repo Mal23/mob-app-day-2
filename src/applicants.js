@@ -16,8 +16,11 @@ for(let index = 0; index < applicants.length; index++) {
     tbody.appendChild(tr);
 
     const tdName = document.createElement('td');
-    tdName.textContent = mobApplicant.name;
     tr.appendChild(tdName);
+    const link = document.createElement('a');
+    tdName.appendChild(link);
+    link.textContent = mobApplicant.name;
+    link.href = 'app-detail.html?name=' + encodeURIComponent(mobApplicant.name);
 
     const tdPosition = document.createElement('td');
     tdPosition.textContent = mobApplicant.position;
@@ -26,6 +29,5 @@ for(let index = 0; index < applicants.length; index++) {
     const tdWeapons = document.createElement('td');
     tdWeapons.textContent = mobApplicant.chosenWeapons.join(' ');
     tr.appendChild(tdWeapons);
-    console.log(mobApplicant.chosenWeapons);
     
 }
